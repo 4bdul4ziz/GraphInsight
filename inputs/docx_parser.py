@@ -5,7 +5,7 @@ import os
 class Docx_Parser(Parser):
     def parse(self):
         doc = docx_document(self.input_file)
-
+        
         all_paragraphs = []
         for para in doc.paragraphs:
             encoded_para = para.text.encode("ascii", "ignore")
