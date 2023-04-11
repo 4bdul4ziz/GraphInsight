@@ -21,8 +21,8 @@ class Image_Parser(Parser):
 
 
     def tesseract_extract_text(self, img, preprocessed_img):
-        pytesseract.pytesseract.tesseract_cmd = r'C:\Users\marti\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
-
+        #pytesseract.pytesseract.tesseract_cmd = r'C:\Users\marti\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+        pytesseract.pytesseract.tesseract_cmd = os.environ.get('TESSERACT_PATH', '/usr/bin/tesseract')
         contours, hierarchy = cv2.findContours(preprocessed_img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
 
         all_text = ""
