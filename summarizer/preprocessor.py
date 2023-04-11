@@ -1,7 +1,11 @@
 import string
+import nltk
 from nltk import sent_tokenize
 from nltk import word_tokenize
 from nltk.corpus import stopwords
+
+
+nltk.download('stopwords')
 
 class Preprocessor:
     def __init__(self, original_text):
