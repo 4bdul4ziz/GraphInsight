@@ -4,7 +4,7 @@ The project is a Python-based tool that uses various natural language processing
 
 # Installation 
 1. Clone the repository
-`git clone https://github.com/<username>/<repository_name>.git`
+`git clone https://github.com/4bdul4ziz/GraphInsight.git`
 
 2. Install the required packages using pip
     -`nltk`
